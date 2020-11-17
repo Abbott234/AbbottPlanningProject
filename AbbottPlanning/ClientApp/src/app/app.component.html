@@ -1,0 +1,17 @@
+<mat-sidenav-container class="maximize">
+  <mat-sidenav [(opened)]="nav.sideNavOpen">
+      <app-side-nav></app-side-nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <app-app-header></app-app-header>
+      <div id="layout-container">
+          <app-side-bar></app-side-bar>
+          <div id="page-container">
+              <app-page-header></app-page-header>
+              <div id="content-container">
+                  <router-outlet></router-outlet>
+              </div>
+          </div>
+      </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

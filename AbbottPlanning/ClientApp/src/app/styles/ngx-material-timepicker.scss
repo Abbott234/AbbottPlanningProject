@@ -1,0 +1,25 @@
+@import '../styles/variables';
+
+ngx-material-timepicker {
+    header {
+        background-color: $primary !important;
+    }
+
+    .clock-face {
+        .clock-face__number>span.active,
+        .clock-face__clock-hand,
+        .clock-face__clock-hand:after {
+            background-color: $primary !important;
+        }
+
+        .clock-face__clock-hand_minute:before {
+            border-color: $primary !important;
+        }
+    }
+
+    ngx-material-timepicker-button {
+        .timepicker-button {
+            color: $primary !important;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import './variables';
+
+mat-card {
+    color: $text !important;
+    padding: 18px !important;
+}
+
+mat-card.no-padding {
+    padding: 0 !important;
+}
+
+mat-card-title {
+    font-size: 18px !important;
+}
+
+mat-form-field {
+    line-height: 1.5 !important;
+}
+
+.mat-dialog-title {
+    font-weight: 400 !important;
+    margin-bottom: 15px !important;
+}
+
+mat-dialog-actions {
+    margin-top: 15px !important;
+}
+
+table.mat-table {
+    .clickable:not(fa-icon):hover {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}
+
+th.mat-header-cell.right,
+td.mat-cell.right,
+td.mat-footer-cell.right {
+    text-align: right;
+}
+
+th.mat-header-cell.right .mat-sort-header-container {
+    justify-content: flex-end;
+}
+
+table.mat-table[matsort] {
+
+    td.mat-cell.right,
+    td.mat-footer-cell.right {
+        padding-right: 17px;
+    }
+
+    td.mat-cell:last-child,
+    td.mat-footer-cell:last-child {
+        padding-right: 41px;
+    }
+}
+
+snack-bar-container.mat-snack-bar-container {
+    padding: 10px 15px;
+}
+
+mat-select-trigger.flex-select-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
